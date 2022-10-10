@@ -25,7 +25,7 @@ function Calculadora() {
     this.addNumDisplay = el => this.display.value += el.innerText;
 
     this.clear = () => this.display.value = '';
-    this.deleta = () => this.display.value = this.value.slice(0,-1);
+    this.deleta = () => this.display.value = this.display.value.slice(0,-1);
     this.realizaConta = () => {
         try {
             const conta = eval(this.display.value);
